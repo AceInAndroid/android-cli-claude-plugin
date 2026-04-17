@@ -1,0 +1,15 @@
+{
+  "name": "android-cli",
+  "version": "1.0.0",
+  "description": "Android SDK command-line workflows for sdkmanager, avdmanager, emulator, adb QA, and local Android CLI diagnostics.",
+  "author": {
+    "name": "bingzhang"
+  },
+  "keywords": [
+    "android",
+    "adb",
+    "emulator",
+    "sdkmanager",
+    "avdmanager"
+  ]
+}
