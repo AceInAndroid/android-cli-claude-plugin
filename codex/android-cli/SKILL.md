@@ -1,19 +1,33 @@
 ---
 name: android-cli
-description: "Use when using Android SDK command-line tools from Claude Code or a terminal: sdkmanager package setup, avdmanager AVD creation, emulator launch, adb install/run/test, screenshots, UI tree dumps, logcat, or diagnosing Android CLI PATH and SDK issues."
-version: 1.1.0
+description: "Use when using Android SDK command-line tools from Codex or a terminal: sdkmanager package setup, avdmanager AVD creation, emulator launch, adb install/run/test, screenshots, UI tree dumps, logcat, or diagnosing Android CLI PATH and SDK issues."
 ---
 
 # Android CLI
 
 Use Android SDK command-line tools without relying on Android Studio UI.
 
-## First Step
+## Official Android CLI
 
-Run the bundled doctor before changing SDK packages or launching emulators. In the Claude Code plugin, use the `bin/` wrapper:
+Google's Android CLI helps build Android apps using the agents and developer environments of your choice.
+
+Install the official Android CLI for macOS arm64:
 
 ```bash
-android-cli-doctor
+curl -fsSL https://dl.google.com/android/cli/latest/darwin_arm64/install.sh | bash
+```
+
+Official pages:
+
+- Source page: https://developer.android.com/tools/agents
+- Documentation: https://developer.android.com/tools/agents/android-cli
+
+## First Step
+
+Run the bundled doctor before changing SDK packages or launching emulators:
+
+```bash
+bash ~/.codex/skills/android-cli/scripts/android_cli_doctor.sh
 ```
 
 Use `--require-device` when the task needs an attached device/emulator.
