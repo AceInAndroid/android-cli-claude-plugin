@@ -23,6 +23,23 @@ $ANDROID_HOME/emulator/emulator
 
 This avoids stale `$ANDROID_HOME/tools/emulator` installations that can fail with Qt library errors.
 
+## Official Android CLI
+
+Google describes Android CLI as a way to "Build high quality Android apps anywhere with Android CLI" and says it makes it faster and easier to build Android apps using the agents and developer environments of your choice.
+
+Install the official Android CLI for macOS arm64:
+
+```bash
+curl -fsSL https://dl.google.com/android/cli/latest/darwin_arm64/install.sh | bash
+```
+
+Official pages:
+
+- Source page: https://developer.android.com/tools/agents
+- Documentation: https://developer.android.com/tools/agents/android-cli
+
+This plugin complements the official Android CLI by giving Claude Code a focused skill and a local `android-cli-doctor` command for SDK, emulator, and adb environment checks.
+
 ## Local Usage
 
 Clone the repository and load the plugin for a Claude Code session:
